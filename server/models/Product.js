@@ -28,6 +28,9 @@ const productSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: 'Category',
     required: true
+    // type: String,
+    //  ref: 'Category',
+    //  required: true
   }
 });
 
