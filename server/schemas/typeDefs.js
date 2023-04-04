@@ -8,7 +8,7 @@ type Category {
 
   type Product {
     _id: ID
-    name: String
+    title: String
     description: String
     image: String
     quantity: Int
