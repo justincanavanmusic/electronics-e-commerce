@@ -27,6 +27,7 @@ type Category {
     firstName: String
     lastName: String
     email: String
+    password: String
     orders: [Order]
   }
 
@@ -40,6 +41,7 @@ type Category {
   }
 
   type Query {
+    users: [User]
     categories: [Category]
     products(category: ID, name: String): [Product]
     product(_id: ID!): Product

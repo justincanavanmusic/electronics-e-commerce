@@ -1,10 +1,14 @@
 const { AuthenticationError } = require('apollo-server-express');
 const { User, Product, Category, Order } = require('../models');
-const { signToken } = require('../utils/auth');
+// const { signToken } = require('../utils/auth');
 const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
 
 const resolvers = {
   Query: {
+    users: async () => {
+      return User.find();
+    },
+    
     categories: async () => {
       return await Category.find();
     },
@@ -92,9 +96,11 @@ const resolvers = {
   Mutation: {
     addUser: async (parent, args) => {
       const user = await User.create(args);
-      const token = signToken(user);
+      console.log(user)
+      // const token = signToken(user);
 
-      return { token, user };
+      // return { token, user };
+      return user;
     },
     addOrder: async (parent, { products }, context) => {
       console.log(context);
