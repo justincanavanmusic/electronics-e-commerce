@@ -18,11 +18,6 @@ a {
     font-style: none !important;
 }
 
-
-#product-cards {
-    /* width: 20vw; */
-    /* height: 55vh; */
-
 #product-cards {
     width: 20vw;
     height: auto;
@@ -30,11 +25,15 @@ a {
     border-radius: 25px;
     margin-bottom: 2vh; 
     margin-top: 2vh;
-
+    border: 1px solid transparent;
     background-color: rgb(245, 243, 243) !important;
-    
 }
+
 #add-btn {
     background-color: var(--color2);
-    
+    border: 1px solid transparent;
+}
+
+img:hover {
+  transform: scale(1.05);
 }
