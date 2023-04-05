@@ -14,12 +14,12 @@ function OrderHistory() {
 
   return (
     <>
-      <div className="container my-1">
+      <div className="container my-1 mt-3">
         <Link to="/">← Back to Products</Link>
 
         {user ? (
           <>
-            <h2>
+            <h2 className="mt-3 mb-2">
               Order History for {user.firstName} {user.lastName}
             </h2>
             {user.orders.map((order) => (
@@ -31,7 +31,7 @@ function OrderHistory() {
                   {order.products.map(({ _id, image, name, price }, index) => (
                     <div key={index} className="card px-1 py-1">
                       <Link to={`/products/${_id}`}>
-                        <img alt={name} src={`/images/${image}`} />
+                        <img alt={name} src={image} />
                         <p>{name}</p>
                       </Link>
                       <div>

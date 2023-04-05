@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { pluralize } from "../../utils/helpers"
 import { useStoreContext } from "../../utils/GlobalState";
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
+import './productItem.css'
+
 import { idbPromise } from "../../utils/helpers";
 
 function ProductItem(item) {
@@ -40,21 +42,35 @@ function ProductItem(item) {
   }
 
   return (
-    <div className="card px-1 py-1">
+ 
+    
+   <>
+    <div id="product-cards" className="card px-3 py-3" style={{ maxWidth: '25vw', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+    <p>  {name}</p>
+  
       <Link to={`/products/${_id}`}>
         <img
           alt={name}
           src={image}
-          height={200}
-          width={200}
+          // height={200}
+          // width={200}
+          // style={{ flexShrink: 1 }}
+          height="130vh"
+          width="130vw"
+          style={{ flexShrink: 0 }}
         />
-        <p>{name}</p>
       </Link>
+        <span className="mt-2">${price}</span>
+     
       <div>
-        <span>${price}</span>
+      {/* <button>Add to cart</button> */}
+      <button id="add-btn" onClick={addToCart} type="button" className="btn btn-primary mt-2">Add to cart</button>
       </div>
-      <button className="" onClick={addToCart}>Add to cart</button>
+      {/* <button className="" onClick={addToCart}>Add to cart</button> */}
     </div>
+  </>
+
+  
   );
 }
 
