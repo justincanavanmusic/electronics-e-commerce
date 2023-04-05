@@ -2,7 +2,6 @@ import React from "react";
 
 // import logo from './logo.svg';
 import "./App.css";
-
 import {
   ApolloClient,
   InMemoryCache,
@@ -18,7 +17,7 @@ import Detail from './pages/Detail';
 import { StoreProvider } from "./utils/GlobalState";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import Nav from "./components/Nav";
+import Nav from "./components/Nav/index";
 import OrderHistory from "./pages/OrderHistory";
 
 const httpLink = createHttpLink({
@@ -46,6 +45,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
+        <body>
         <div>
           <StoreProvider>
             <Nav />
@@ -54,13 +54,18 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/orderHistory" element={<OrderHistory />} />
-              <Route 
-                path="/products/:id" 
-                element={<Detail />} 
+              <Route
+                path="/products/:id"
+                element={<Detail />}
               />
             </Routes>
           </StoreProvider>
         </div>
+        </body>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+        />
       </Router>
     </ApolloProvider>
   );
