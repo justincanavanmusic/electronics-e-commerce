@@ -10,10 +10,10 @@ function ProductList() {
   const [state, dispatch] = useStoreContext();
 
   const { currentCategory } = state;
-  console.log(state.products)
+  console.log(state)
 
   const { loading, data } = useQuery(QUERY_PRODUCTS);
-  console.log(data)
+  // console.log(data)
 
   useEffect(() => {
     if (data) {
