@@ -15,7 +15,7 @@ function CategoryMenu() {
 
   const { loading, data: categoryData } = useQuery(QUERY_CATEGORIES);
 
-  console.log(categoryData.categories[0].name);
+  // console.log(categoryData.categories[0].name);
 
   // useEffect(() => {
   //   if (categoryData) {
@@ -51,7 +51,7 @@ function CategoryMenu() {
         <button
           key={oneCategory._id}
           // onClick={() => {
-          //   handleClick(item._id);
+          //   handleClick(oneCategory._id);
           // }}
         >
           {oneCategory.name}
