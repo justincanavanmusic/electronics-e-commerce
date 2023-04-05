@@ -53,7 +53,7 @@ function ProductItem(item) {
       <div>
         <span>${price}</span>
       </div>
-      <button onClick={addToCart}>Add to cart</button>
+      <button className="" onClick={addToCart}>Add to cart</button>
     </div>
   );
 }
