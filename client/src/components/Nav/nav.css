@@ -1,6 +1,17 @@
-#navContainer {
-    background-color: rgb(143, 193, 193);
+:root {
+    --color1: #353535;
+    --color2: #3c6e71;
+    --color3: #ffffff;
+    --color4: #d9d9d9;
+    --color5: #284b63;
 }
 
-#signUp {
+#navContainer {
+    background-color: var(--color2) !important;
+    color: var(--color4);
+}
+
+a {
+    color: var(--color3) !important;
+    font-style: none !important;
 }
