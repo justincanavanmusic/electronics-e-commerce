@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { pluralize } from "../../utils/helpers"
 import { useStoreContext } from "../../utils/GlobalState";
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
+
 import { idbPromise } from "../../utils/helpers";
 
 function ProductItem(item) {
@@ -40,7 +41,8 @@ function ProductItem(item) {
   }
 
   return (
-    <div className="card px-1 py-1">
+    <div className="container d-flex">
+    <div className="card px-2 py-2">
       <Link to={`/products/${_id}`}>
         <img
           alt={name}
@@ -53,7 +55,10 @@ function ProductItem(item) {
       <div>
         <span>${price}</span>
       </div>
+      <div>
       <button onClick={addToCart}>Add to cart</button>
+      </div>
+    </div>
     </div>
   );
 }
