@@ -45,7 +45,7 @@
 }
 
 .cart-closed:hover {
-  transform: rotate(8deg);
+  transform: scale(1.1)
 }
 
 .cart img {
@@ -59,7 +59,7 @@
   margin: 0 .5rem 1rem 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
   .cart {
     position: relative;
     max-width: 100%;
