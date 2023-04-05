@@ -9,6 +9,7 @@ const Home = () => {
       <CategoryMenu />
       {/* <p>hello</p> */}
       <ProductList />
+      <Cart />
     </div>
   );
 };

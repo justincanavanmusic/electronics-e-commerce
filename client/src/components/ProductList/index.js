@@ -13,7 +13,7 @@ function ProductList() {
   console.log(state)
 
   const { loading, data } = useQuery(QUERY_PRODUCTS);
-  // console.log(data)
+  console.log(data)
 
   useEffect(() => {
     if (data) {
