@@ -11,7 +11,7 @@ function Nav() {
       return (
         <div class="container-fluid" id="signUp">
           <Link to="/orderHistory">
-            Order History
+            Signup
           </Link>
           <a href="/" onClick={() => Auth.logout()}>
             Logout
