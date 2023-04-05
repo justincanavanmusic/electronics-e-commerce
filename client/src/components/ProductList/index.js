@@ -45,10 +45,10 @@ function ProductList() {
   }
 
   return (
-    <div className="my-2">
-      <h2>Our Products:</h2>
+    <div className="container my-2">
+      <h2 className="text-center">Our Products:</h2>
       {state.products.length ? (
-        <div className="flex-row">
+        <div className="d-flex justify-content-evenly flex-wrap">
           {filterProducts().map((product) => (
             <ProductItem
               key={product._id}
@@ -60,6 +60,7 @@ function ProductList() {
             />
           ))}
         </div>
+        
       ) : (
         <h3>You haven't added any products yet!</h3>
       )}
