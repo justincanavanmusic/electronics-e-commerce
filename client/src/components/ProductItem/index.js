@@ -66,6 +66,7 @@ function ProductItem(item) {
       {/* <button>Add to cart</button> */}
       <button id="add-btn" onClick={addToCart} type="button" className="btn btn-primary mt-2">Add to cart</button>
       </div>
+
       {/* </div> */}
      
     </div>

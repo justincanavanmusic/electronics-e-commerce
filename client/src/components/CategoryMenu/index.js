@@ -45,16 +45,16 @@ function CategoryMenu() {
 
   return (
     <div>
-      <h2>Choose a Category:</h2>
+      <h2 className="mt-3">Choose a Category:</h2>
       {categories.map((oneCategory) => (
-        <button
+      <button id="add-btn" type="button" className="btn btn-primary mt-2" 
           key={oneCategory._id}
           onClick={() => {
             handleClick(oneCategory._id);
           }}
         >
           {oneCategory.name}
-        </button>
+          </button>
         
       ))}
     </div>
