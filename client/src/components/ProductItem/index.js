@@ -52,8 +52,12 @@ function ProductItem(item) {
         <img
           alt={name}
           src={image}
-          height={200}
-          width={200}
+          // height={200}
+          // width={200}
+          // style={{ flexShrink: 1 }}
+          height="130vh"
+          width="130vw"
+          style={{ flexShrink: 0 }}
         />
       </Link>
         <span className="mt-2">${price}</span>
