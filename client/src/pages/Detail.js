@@ -102,8 +102,10 @@ function Detail() {
           </p>
 
           <img
-            src={`/images/${currentProduct.image}`}
+            src={currentProduct.image}
             alt={currentProduct.name}
+            height={400}
+            width={400}
           />
         </div>
       ) : null}
