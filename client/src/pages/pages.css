@@ -47,3 +47,7 @@ color: #eb2a10 !important
 .line-sep{
     margin-bottom: 50px;
 }
+
+#whiteText {
+    color: white;
+}
