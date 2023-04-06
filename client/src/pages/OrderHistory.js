@@ -24,18 +24,18 @@ function OrderHistory() {
 
         {user ? (
           <>
-            <h2 className="mt-3 mb-2">
+            <h2 className="mt-3 mb-2" id='o-name'>
               Order History for {user.firstName} {user.lastName}
             </h2>
-            <hr></hr>
+            <hr class="line-sep"></hr>
             {user.orders.map((order) => (
               <div key={order._id} className="my-2">
                 <div className="flex-row">
                   <div class="col-12">
                     {order.products.map(({ _id, image, name, price }, index) => (
                       <div key={index} className="card px-1 py-1 item-card">
-                        <p>Ordered: {new Date(parseInt(order.purchaseDate)).toLocaleDateString()}</p>
-                        <p>Order ID: {order._id}</p>
+                        <p id='o-date'>Ordered: {new Date(parseInt(order.purchaseDate)).toLocaleDateString()}</p>
+                        <p id='o-id'>Order ID: {order._id}</p>
                         <h2 id="name-tag">{name}</h2>
                         <Link class="oh-container" to={`/products/${_id}`}>
                           <img alt={name} src={image} className='order-history' />
@@ -44,7 +44,7 @@ function OrderHistory() {
                         <div>
                           <span id="price-span">${price}</span>
                         </div>
-                        <hr></hr>
+                        <hr class="line-sep"></hr>
                       </div>
                     ))}
                   </div>

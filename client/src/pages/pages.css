@@ -37,6 +37,12 @@ color: var(--color2) !important
 }
 
 #name-tag{
-    color: black !important;
     font-style: none !important;
+}
+#o-name,#o-date,#o-id,#price-span,#name-tag,.line-sep,#link-color{
+    color:white !important;
+}
+
+.line-sep{
+    margin-bottom: 50px;
 }
