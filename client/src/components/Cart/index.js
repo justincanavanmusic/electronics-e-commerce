@@ -8,7 +8,8 @@ import Auth from '../../utils/auth';
 import { useStoreContext } from '../../utils/GlobalState';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
 import './style.css';
-import {AiOutlineShoppingCart} from 'react-icons/ai'
+import {AiOutlineShoppingCart, AiFillCloseCircle} from 'react-icons/ai'
+
 
 const stripePromise = loadStripe('pk_test_51MtYp9Ez0mh6YSVXTKg8oYT8P8KB2aoOiktzz41yMRgMW7GS7zsipzLFNrbQbPSOEzpnH1Z3PoahcoFnOoLiFht000PIF5lKYj');
 
@@ -74,7 +75,7 @@ const Cart = () => {
   return (
     <div className="cart">
       <div className="close" onClick={toggleCart}>
-        [close]
+        <AiFillCloseCircle className="x-icon" />
       </div>
       <h2>Shopping Cart</h2>
       {state.cart.length ? (
@@ -87,7 +88,10 @@ const Cart = () => {
             <strong>Total: ${calculateTotal()}</strong>
 
             {Auth.loggedIn() ? (
-              <button onClick={submitCheckout}>Checkout</button>
+              <div>
+              <button onClick={submitCheckout} id="add-btn" type="button" className="btn btn-primary mt-2" 
+              >Checkout</button>
+              </div>
             ) : (
               <span>(log in to check out)</span>
             )}

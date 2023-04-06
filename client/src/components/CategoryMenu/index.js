@@ -49,7 +49,7 @@ function CategoryMenu() {
       <h2 className="mt-3" id='c-cat'>Choose a Category:</h2>
       <div className='category-container'>
       {categories.map((oneCategory) => (
-      <button id="add-btn" type="button" className="btn btn-primary mt-2" 
+      <button id="add-btn" type="button" className="cat-btn btn btn-primary mt-2" 
           key={oneCategory._id}
           onClick={() => {
             handleClick(oneCategory._id);
