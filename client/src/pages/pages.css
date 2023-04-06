@@ -6,12 +6,12 @@
     --color5: #284b63;
     --color6: rgb(247, 244, 244) 
 }
-#link-color {
- color: black !important;   
+#login-text {
+ color: var(--color4) !important;   
 }
 
 #link-color:hover {
-color: var(--color2) !important
+color: #eb2a10 !important
 }
 
 .order-history{
@@ -37,6 +37,13 @@ color: var(--color2) !important
 }
 
 #name-tag{
-    color: black !important;
     font-style: none !important;
+
+}
+#o-name,#o-date,#o-id,#price-span,#name-tag,.line-sep,#link-color{
+    color:white !important;
+}
+
+.line-sep{
+    margin-bottom: 50px;
 }
