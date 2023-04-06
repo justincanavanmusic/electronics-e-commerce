@@ -7,5 +7,9 @@
     --color6: rgb(247, 244, 244) 
 }
 #link-color {
- color: var(--color2) !important;   
+ color: var(--color5) !important;   
+}
+
+#link-color:hover {
+color: var(--color2) !important
 }
