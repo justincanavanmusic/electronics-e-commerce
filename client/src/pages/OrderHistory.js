@@ -4,13 +4,17 @@ import './pages.css'
 
 import { useQuery } from '@apollo/client';
 import { QUERY_USER } from '../utils/queries';
+import './pages.css'
 
 function OrderHistory() {
   const { data } = useQuery(QUERY_USER);
   let user;
 
+
+
   if (data) {
     user = data.user;
+    console.log(user)
   }
 
   return (
@@ -37,7 +41,11 @@ function OrderHistory() {
                         
                       </Link>
                       <div>
+
+                        <span>{name}</span>
+
                         <span id="price-span">${price}</span>
+
                       </div>
                       <hr></hr>
                     </div>
