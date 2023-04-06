@@ -5,6 +5,7 @@ import { UPDATE_PRODUCTS } from '../../utils/actions';
 import { useQuery } from '@apollo/client';
 import { QUERY_PRODUCTS } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
+import './productList.css'
 
 function ProductList() {
   const [state, dispatch] = useStoreContext();
