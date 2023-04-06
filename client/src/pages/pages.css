@@ -1,0 +1,15 @@
+:root {
+    --color1: #353535;
+    --color2: #3c6e71;
+    --color3: #ffffff;
+    --color4: #d9d9d9;
+    --color5: #284b63;
+    --color6: rgb(247, 244, 244) 
+}
+#link-color {
+ color: var(--color5) !important;   
+}
+
+#link-color:hover {
+color: var(--color2) !important
+}

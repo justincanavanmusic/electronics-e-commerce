@@ -3,6 +3,7 @@ import Auth from "../../utils/auth";
 import './nav.css'
 import { Link } from "react-router-dom";
 import Cart from "../../components/Cart/index";
+import { FcElectronics } from 'react-icons/fc'
 
 function Nav() {
 
@@ -10,7 +11,7 @@ function Nav() {
     if (Auth.loggedIn()) {
       return (
         <div class="container-fluid">
-          <a class="navbar-brand" href="/">Electronics Shop</a>
+          <a class="navbar-brand" href="/">Gamer's Circuit &nbsp;<FcElectronics/></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -25,7 +26,7 @@ function Nav() {
     } else {
       return (
         <div class="container-fluid">
-          <a class="navbar-brand" href="/">Electronics Shop</a>
+          <a class="navbar-brand" href="/">Gamer's Circuit &nbsp;<FcElectronics/></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -51,12 +52,3 @@ function Nav() {
 }
 
 export default Nav;
-
-{/* <div class="container-fluid" id="signUp">
-<Link to="/orderHistory">
-  Signup
-</Link>
-<a href="/" onClick={() => Auth.logout()}>
-  Logout
-</a>
-</div> */}
