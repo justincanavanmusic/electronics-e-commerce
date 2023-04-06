@@ -10,7 +10,6 @@
 #navContainer {
     background-color: var(--color2) !important;
     color: var(--color4);
-    height: 60px;
 }
 
 a {
