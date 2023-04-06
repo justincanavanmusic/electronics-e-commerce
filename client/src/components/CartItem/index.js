@@ -5,6 +5,7 @@ import { idbPromise } from "../../utils/helpers";
 import './cartItem.css'
 
 const CartItem = ({ item }) => {
+  console.log(item);
 
   const [, dispatch] = useStoreContext();
 
@@ -40,7 +41,10 @@ const CartItem = ({ item }) => {
   return (
     <div className="flex-row">
       <div>
-        <img src={item.image} alt="" />
+        <img
+          src={item.image}
+          alt=""
+        />
       </div>
       <div>
         <div>{item.name}, ${item.price}</div>
@@ -52,12 +56,12 @@ const CartItem = ({ item }) => {
             value={item.purchaseQuantity}
             onChange={onChange}
           />
-          <span id='trash'
+          <span
             role="img"
             aria-label="trash"
             onClick={() => removeFromCart(item)}
           >
-            <span id='trashcan'>🗑️</span>
+            🗑️
           </span>
         </div>
       </div>

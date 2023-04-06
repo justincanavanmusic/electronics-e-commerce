@@ -53,9 +53,9 @@ function ProductItem(item) {
             // height={200}
             // width={200}
             // style={{ flexShrink: 1 }}
-            height="130vh"
-            width="130vw"
-            style={{ flexShrink: 0 }}
+            height="100vh"
+            width="100vw"
+            style={{ flexShrink: 1 }}
           />
         </Link>
         <span className="mt-2">${price}</span>
