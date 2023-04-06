@@ -19,6 +19,7 @@ a {
 }
 
 
+
 #product-cards {
     max-width: 30vw;
     min-width: 30vw;
@@ -28,7 +29,7 @@ a {
     margin-bottom: 2vh; 
     margin-top: 2vh;
     border: 1px solid transparent;
-    background-color: rgb(245, 243, 243) !important;
+    background-color: rgb(238, 229, 229) !important;
 }
 
 #add-btn {
