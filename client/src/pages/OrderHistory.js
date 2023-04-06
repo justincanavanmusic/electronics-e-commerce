@@ -32,17 +32,24 @@ function OrderHistory() {
                   {new Date(parseInt(order.purchaseDate)).toLocaleDateString()}
                 </h3>
                 <div className="flex-row">
-                  {order.products.map(({ _id, image, name, price }, index) => (
-                    <div key={index} className="card px-1 py-1">
-                      <Link id="order-img" to={`/products/${_id}`}>
-                        <img alt={name} src={image} />
-                        <p>{name}</p>
-                      </Link>
-                      <div>
-                        <span>{name}</span>
+                  <div class="col-12">
+                    {order.products.map(({ _id, image, name, price }, index) => (
+                      <div key={index} className="card px-1 py-1 item-card">
+                        <p>Ordered: {new Date(parseInt(order.purchaseDate)).toLocaleDateString()}</p>
+                        <p>Order ID: {order._id}</p>
+                        <h2 id="name-tag">{name}</h2>
+                        <Link class="oh-container" to={`/products/${_id}`}>
+                          <img alt={name} src={image} className='order-history' />
+
+                        </Link>
+                        <div>
+                          <span id="price-span">${price}</span>
+                        </div>
+                        <hr></hr>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
+
                 </div>
               </div>
             ))}
