@@ -29,6 +29,11 @@
   }
 
 body {
-    background-color: var(--color4) !important;
+    background-color: #ffe0ff31 !important;
 }
 
+
+.btn {
+  background-color: green !important;
+  color: rgb(255, 255, 255) !important;
+}

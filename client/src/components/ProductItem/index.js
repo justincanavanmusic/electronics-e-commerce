@@ -63,7 +63,7 @@ function ProductItem(item) {
         </Link>
         <span className="mt-2">${price}</span>
 
-        <div>
+        <div class="btn-box">
           {/* <button>Add to cart</button> */}
           <button id="add-btn" onClick={addToCart} type="button" className="btn btn-primary mt-2">Add to cart</button>
         </div>
