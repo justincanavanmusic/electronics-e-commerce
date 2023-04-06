@@ -10,6 +10,8 @@ import { idbPromise } from "../../utils/helpers";
 function ProductItem(item) {
   const [state, dispatch] = useStoreContext();
 
+  console.log(item)
+
   const {
     image,
     name,
@@ -43,7 +45,7 @@ function ProductItem(item) {
 
   return (
 
-      <div id="product-cards" className="card px-3 py-3" style={{ maxWidth: '25vw', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+      <div id="product-cards" className="card px-3 py-3" style={{ flex: '1 0 33%', maxWidth: '22vw', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <p>{name}</p>
 
         <Link to={`/products/${_id}`}>
@@ -53,9 +55,9 @@ function ProductItem(item) {
             // height={200}
             // width={200}
             // style={{ flexShrink: 1 }}
-            height="130vh"
-            width="130vw"
-            style={{ flexShrink: 0 }}
+            height="100vh"
+            width="100vw"
+            style={{ flexShrink: 1 }}
           />
         </Link>
         <span className="mt-2">${price}</span>
@@ -68,6 +70,8 @@ function ProductItem(item) {
         {/* </div> */}
 
       </div>
+
+  
 
   );
 }
