@@ -6,12 +6,12 @@
     --color5: #284b63;
     --color6: rgb(247, 244, 244) 
 }
-#link-color {
- color: black !important;   
+#login-text {
+ color: var(--color4) !important;   
 }
 
 #link-color:hover {
-color: var(--color2) !important
+color: #eb2a10 !important
 }
 
 .order-history{
