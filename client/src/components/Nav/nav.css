@@ -43,3 +43,7 @@ a {
         width: 150px;
     }
 }
+
+.navbar-toggler {
+    background-color: green !important;
+}
