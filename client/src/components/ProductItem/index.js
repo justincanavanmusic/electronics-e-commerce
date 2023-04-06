@@ -61,7 +61,7 @@ function ProductItem(item) {
             // style={{ flexShrink: 1 }}
           />
         </Link>
-        <span className="mt-2">${price}</span>
+        <span class="price" className="mt-2">${price}</span>
 
         <div class="btn-box">
           {/* <button>Add to cart</button> */}
