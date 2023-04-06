@@ -45,7 +45,8 @@ function ProductItem(item) {
 
   return (
 
-      <div id="product-cards" className="card px-3 py-3" style={{ flex: '1 0 33%', maxWidth: '22vw', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <div id="product-cards" className="card px-3 py-3" style={{ flex: '1 0 30%', flexDirection: 
+    'column', margin: '1vw', maxWidth: '22vw', display: 'flex', justifyContent: 'center' }}>
         <p>{name}</p>
 
         <Link to={`/products/${_id}`}>
@@ -55,8 +56,9 @@ function ProductItem(item) {
             // height={200}
             // width={200}
             // style={{ flexShrink: 1 }}
-            height="100vh"
-            width="100vw"
+            height="90vh"
+            width="90vw"
+            padding="2vw"
             style={{ flexShrink: 1 }}
           />
         </Link>
