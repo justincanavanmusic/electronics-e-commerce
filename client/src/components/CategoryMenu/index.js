@@ -45,10 +45,12 @@ function CategoryMenu() {
   };
 
   return (
-    <div>
+    <div className='container'>
+      <div className='row'>
       <h2 className="mt-3" id='c-cat'>Choose a Category:</h2>
-      <div className='category-container'>
+      {/* <div className='category-container'> */}
       {categories.map((oneCategory) => (
+        <div className='col-6 col-sm-4 col-md-4 col-lg-2'>
       <button id="add-btn" type="button" className="cat-btn btn mt-2" 
           key={oneCategory._id}
           onClick={() => {
@@ -57,9 +59,11 @@ function CategoryMenu() {
         >
           {oneCategory.name}
           </button>
+          </div>
         
       ))}
       </div>
+      {/* </div> */}
     </div>
   );
 }

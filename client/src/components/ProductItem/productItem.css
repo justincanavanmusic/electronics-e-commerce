@@ -23,7 +23,8 @@ a {
 #product-cards {
     /* max-width: 38vw;
     min-width: 38vw; */
-    /* height: 40vh; */
+    /* height: 35vh; */
+    /* min-height: 38vh; */
     text-align: center;
     border-radius: 25px;
     margin-bottom: 2vh; 

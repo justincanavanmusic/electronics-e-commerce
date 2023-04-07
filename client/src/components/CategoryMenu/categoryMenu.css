@@ -1,10 +1,11 @@
 
 
-.cat-btn {
+/* .cat-btn {
     margin-right: 2rem;
-}
+} */
 
 .category-container {
     display: flex;
     justify-content: center;
+    /* flex: flex-wrap; */
 }
