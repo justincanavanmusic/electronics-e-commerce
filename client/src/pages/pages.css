@@ -24,6 +24,9 @@ color: #eb2a10 !important
     margin-top: 2vh;
     border: 1px solid transparent;
     background-color: rgb(245, 243, 243) !important;
+    /* mix-blend-mode: lighten; */
+    /* border: 50px white; */
+
 }
 
 .item-card{
