@@ -41,8 +41,9 @@ const CartItem = ({ item }) => {
 
   return (
     <div className="flex-row">
-      <div>
+      <div className='cart-item-display'>
       <div className="mb-3">{item.name}</div>
+      <div>
         <img
         className="mb-3"
           src={item.image}
@@ -70,6 +71,7 @@ const CartItem = ({ item }) => {
             <AiFillCloseCircle className="del-item"/>
           </span>
           <hr></hr>
+          </div>
         </div>
       </div>
     </div>

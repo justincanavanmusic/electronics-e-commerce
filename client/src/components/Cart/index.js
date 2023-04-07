@@ -77,7 +77,8 @@ const Cart = () => {
       <div className="close" onClick={toggleCart}>
         <AiFillCloseCircle className="x-icon" />
       </div>
-      <h2>Shopping Cart</h2>
+      <h2 className="mx-3">Your Cart</h2>
+      <hr></hr>
       {state.cart.length ? (
         <div>
           {state.cart.map((item) => (
@@ -93,7 +94,9 @@ const Cart = () => {
               >Checkout</button>
               </div>
             ) : (
-              <span>(log in to check out)</span>
+              <div className="mt-2 mb-2">
+              <span>You must be logged in to check out!</span>
+              </div>
             )}
           </div>
         </div>

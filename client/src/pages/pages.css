@@ -38,6 +38,8 @@ color: #eb2a10 !important
 
 #name-tag{
     font-style: none !important;
+    margin-bottom: 3vh;
+    max-width: 80%;
 
 }
 #o-name,#o-date,#o-id,#price-span,#name-tag,.line-sep,#link-color{
@@ -48,6 +50,9 @@ color: #eb2a10 !important
     margin-bottom: 50px;
 }
 
+.order-info {
+    text-align: right;
+    
 #whiteText {
     color: white;
 }
