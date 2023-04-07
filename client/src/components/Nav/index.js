@@ -4,6 +4,7 @@ import './nav.css'
 import { Link } from "react-router-dom";
 import Cart from "../../components/Cart/index";
 import { FcElectronics } from 'react-icons/fc'
+import '../../index.css'
 
 function Nav() {
 
@@ -29,13 +30,13 @@ function Nav() {
       );
     } else {
       return (
+        
         <div className="container-fluid">
           <a className="navbar-brand" href="/">Gamer's Circuit &nbsp;<FcElectronics/></a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <a className="nav-link active" aria-current="page" href="/">Home</a>
             <a className="nav-link" href="/OrderHistory">Order History</a>
             <a className="nav-link" href="/Login">Login</a>
             <a className="nav-link" href="/Signup">Signup</a>

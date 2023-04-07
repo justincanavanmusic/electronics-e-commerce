@@ -55,8 +55,9 @@ const CartItem = ({ item }) => {
         ${item.price.toString().includes('.') ? item.price : item.price + '.00'}
         </div>
         <div>
-          <span>Qty:</span>
+          <span>Qty: &nbsp;</span>
           <input
+            className='cartInput'
             type="number"
             placeholder="1"
             value={item.purchaseQuantity}

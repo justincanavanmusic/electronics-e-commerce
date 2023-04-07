@@ -1,13 +1,18 @@
-/* .cat-btn {
-    margin-right: 2rem;
-  
-} */
+.cat-btn {
+    width: 100px;
+}
 
-.category-container {
+.cat-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
     max-width: 100%;
+    position: relative;
+}
+
+#c-cat {
+    text-align: center;
+    margin-bottom: 30px;
 }
