@@ -52,7 +52,7 @@ const CartItem = ({ item }) => {
       </div>
       <div>
         <div className="mb-3">
-        ${item.price}
+        ${item.price.toString().includes('.') ? item.price : item.price + '.00'}
         </div>
         <div>
           <span>Qty:</span>

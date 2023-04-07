@@ -20,6 +20,8 @@ function ProductItem(item) {
     quantity
   } = item;
 
+  console.log(typeof price);
+
   const { cart } = state
 
   const addToCart = () => {
@@ -63,7 +65,7 @@ function ProductItem(item) {
             // style={{ flexShrink: 1 }}
           />
         </Link>
-        <span className="mt-2">${price}</span>
+        <span className="mt-2">${price.toString().includes('.') ? price : price + '.00'}</span>
 
         <div class="btn-box">
           {/* <button>Add to cart</button> */}

@@ -49,6 +49,7 @@ function CategoryMenu() {
   return (
     <div className='container'>
       <div className='row'>
+      
       <h2 className="mt-3" id='c-cat'>Choose a Category:</h2>
       {/* <div className='category-container'> */}
       {categories.map((oneCategory) => (

@@ -21,8 +21,9 @@ a {
 #product-cards {
     /* max-width: 38vw;
     min-width: 38vw; */
-    /* height: 35vh; */
-    /* min-height: 38vh; */
+    /* height: 40vh; */
+    /* min-height: 38vh;
+    max-height: 45vh; */
     text-align: center;
     border-radius: 25px;
     margin-bottom: 2vh; 
@@ -35,8 +36,10 @@ a {
 #add-btn {
     background-color: var(--color2);
     border: 1px solid transparent;
+    /* width: 12vw; */
  
 }
+
 
 img:hover {
   transform: scale(1.05);

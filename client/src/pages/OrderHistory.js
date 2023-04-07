@@ -59,7 +59,7 @@ function OrderHistory() {
 
                         </Link> */}
                         <div>
-                          <span id="price-span">${price}</span>
+                          <span id="price-span">${price.toString().includes('.') ? price : price + '.00'}</span>
                         </div>
                         <hr class="line-sep"></hr>
                       </div>
