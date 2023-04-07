@@ -14,3 +14,8 @@ img {
 .del-item:hover {
     transform: scale(1.1);
 }
+
+.cart-item-display {
+    text-align: center;
+    width: 22vw;
+}
