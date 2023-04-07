@@ -19,3 +19,7 @@ img {
     text-align: center;
     width: 22vw;
 }
+
+.cartInput {
+    border-radius: 5px;
+}

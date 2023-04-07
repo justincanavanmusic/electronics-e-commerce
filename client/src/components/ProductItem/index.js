@@ -44,38 +44,23 @@ function ProductItem(item) {
   }
 
   return (
-
-      <div id="product-cards" className="card px-3 py-3" style={{ margin: '1vw' }}>
-        {/* {{ flexDirection: 'column', margin: '1vw', display: 'flex', justifyContent: 'center' }}> */}
-      {/* <div id="product-cards" className="card px-3 py-3"> */}
-        <p>{name}</p>
-
-        <Link to={`/products/${_id}`}>
-          <img
-            alt={name}
-            src={image}
-
-            // style={{ flexShrink: 1 }}
-            height="110vh"
-            width="110vw"
-            padding="2vw"
-            // className='img-fluid'
-            // style={{ flexShrink: 1 }}
-          />
-        </Link>
-        <span className="mt-2">${price}</span>
-
-        <div class="btn-box">
-          {/* <button>Add to cart</button> */}
-          <button id="add-btn" onClick={addToCart} type="button" className="btn btn-primary mt-2">Add to cart</button>
-        </div>
-
-        {/* </div> */}
-
+    <div id="product-cards" className="card px-3 py-3" style={{ margin: '1vw' }}>
+      <p>{name}</p>
+      <Link to={`/products/${_id}`}>
+        <img
+          alt={name}
+          src={image}
+          height="150vh"
+          width="150vw"
+          padding="2vw"
+          className="cardImage"
+        />
+      </Link>
+      <span className="mt-2" id="price-box">${price}</span>
+      <div class="btn-box">
+        <button id="add-btn-2" onClick={addToCart} type="button" className="btn btn-primary mt-2">Add to cart</button>
       </div>
-
-  
-
+    </div>
   );
 }
 

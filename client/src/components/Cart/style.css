@@ -16,11 +16,11 @@
   /* scroll-behavior: smooth; */
   top: 0;
   bottom:0;
-    position:fixed;
-    overflow-y:scroll;
-    overflow-x:hidden;
-  background-color: var(--color4);
-  color: black;
+  position:fixed;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  background-color: rgba(57, 57, 57) !important;
+  color: rgb(255, 255, 255);
   padding: .5rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
   border-bottom-left-radius: .5rem;

@@ -10,8 +10,10 @@
 #navContainer {
     background-color: rgb(27, 27, 27) !important;
     color: var(--color4);
+}
 
-    /* height: 60px; */
+.navbar-brand {
+    font-family: 'Russo One', sans-serif;
 }
 
 a {
