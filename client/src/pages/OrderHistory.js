@@ -9,8 +9,6 @@ function OrderHistory() {
   const { data } = useQuery(QUERY_USER);
   let user;
 
-
-
   if (data) {
     user = data.user;
     console.log(user)
@@ -36,22 +34,39 @@ function OrderHistory() {
                 </h3> */}
                 <div className="flex-row">
                   <div class="col-12">
+                  
                     {order.products.map(({ _id, image, name, price }, index) => (
+                      
                       <div key={index} className="card px-1 py-1 item-card">
-                        <p id='o-date'>Ordered: {new Date(parseInt(order.purchaseDate)).toLocaleDateString()}</p>
-                        <p id='o-id'>Order ID: {order._id}</p>
+                        <div className='row'>
+                        <div className="col-md-8">
                         <h2 id="name-tag">{name}</h2>
                         <Link class="oh-container" to={`/products/${_id}`}>
                           <img alt={name} src={image} className='order-history' />
 
                         </Link>
+                        </div>
+                        
+                      <div className='order-info col-md-4'>
+                      <p id='o-id'>Order ID: {order._id}</p>
+                        <p id='o-date'>Ordered: {new Date(parseInt(order.purchaseDate)).toLocaleDateString()}</p>
+                        </div>
+                        
+                        </div>
+                        
+                        {/* <Link class="oh-container" to={`/products/${_id}`}>
+                          <img alt={name} src={image} className='order-history' />
+
+                        </Link> */}
                         <div>
                           <span id="price-span">${price}</span>
                         </div>
                         <hr class="line-sep"></hr>
                       </div>
+                    
                     ))}
                   </div>
+                  
 
                 </div>
               </div>
