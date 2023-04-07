@@ -23,3 +23,7 @@ img {
 .cartInput {
     border-radius: 5px;
 }
+
+.cart-item-img {
+    mix-blend-mode: darken;   
+}
