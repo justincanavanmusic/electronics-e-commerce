@@ -47,12 +47,16 @@ function ProductList() {
   }
 
   return (
-    <div className="container my-2">
+    <div className="container text-center my-2">
+      
       <h2 className="text-center"
       id='r-product'>Our Products:</h2>
+   
       {state.products.length ? (
-        <div className="d-flex justify-content-evenly flex-wrap">
+        <div className="row">
+        
           {filterProducts().map((product) => (
+            <div className="col-sm-12 col-md-6 col-lg-4">
             <ProductItem
               key={product._id}
               _id={product._id}
@@ -61,13 +65,44 @@ function ProductList() {
               price={product.price}
               quantity={product.quantity}
             />
+           </div>
           ))}
-        </div>
-        
+           </div>
+      
+ 
+    // <div className="container my-2">
+       
+    //  <h2 className="text-center"
+    //   id='r-product'>Our Products:</h2>
+      
+   
+    //   {state.products.length ? (
+       
+    //     <div className="d-flex justify-content-evenly flex-wrap">
+    //       <div className="col-12 col-sm-6 col-lg-4">
+    //       {filterProducts().map((product) => (
+    //         <ProductItem
+    //           key={product._id}
+    //           _id={product._id}
+    //           image={product.image}
+    //           name={product.name}
+    //           price={product.price}
+    //           quantity={product.quantity}
+    //         />
+            
+    //       ))}
+          
+    //       </div>
+    //       </div>
+    
+
       ) : (
+        
         <h3>You haven't added any products yet!</h3>
+        
       )}
       {loading ? <p>Loading</p> : null}
+     
     </div>
   );
 }

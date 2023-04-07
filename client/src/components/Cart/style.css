@@ -13,6 +13,12 @@
   min-width: 20%;
   max-width: 30%;
   height: auto;
+  /* scroll-behavior: smooth; */
+  top: 0;
+  bottom:0;
+    position:fixed;
+    overflow-y:scroll;
+    overflow-x:hidden;
   background-color: var(--color4);
   color: black;
   padding: .5rem;
@@ -77,6 +83,15 @@
   left: 50% !important;
   
   transform: translateX(-50%) !important;
+}
+
+.x-icon {
+  font-size: 2rem;
+
+}
+
+.x-icon:hover {
+  transform: scale(1.1);
 }
 
 

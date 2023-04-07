@@ -5,3 +5,17 @@
 img {
     cursor: pointer;
 }
+
+.del-item {
+    cursor: pointer;
+    color: rgb(197, 19, 19);
+}
+
+.del-item:hover {
+    transform: scale(1.1);
+}
+
+.cart-item-display {
+    text-align: center;
+    width: 22vw;
+}

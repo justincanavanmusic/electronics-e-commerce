@@ -45,19 +45,21 @@ function ProductItem(item) {
 
   return (
 
-      <div id="product-cards" className="card px-3 py-3" style={{ flexDirection: 'column', margin: '1vw', display: 'flex', justifyContent: 'center' }}>
+      <div id="product-cards" className="card px-3 py-3" style={{ margin: '1vw' }}>
+        {/* {{ flexDirection: 'column', margin: '1vw', display: 'flex', justifyContent: 'center' }}> */}
+      {/* <div id="product-cards" className="card px-3 py-3"> */}
         <p>{name}</p>
 
         <Link to={`/products/${_id}`}>
           <img
             alt={name}
             src={image}
-            // height={200}
-            // width={200}
+
             // style={{ flexShrink: 1 }}
-            height="90vh"
-            width="90vw"
+            height="110vh"
+            width="110vw"
             padding="2vw"
+            // className='img-fluid'
             // style={{ flexShrink: 1 }}
           />
         </Link>

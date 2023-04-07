@@ -1,8 +1,12 @@
-#add-btn {
+.cat-btn {
     margin-right: 2rem;
 }
 
 .category-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    max-width: 100%;
 }
