@@ -47,16 +47,17 @@ const CartItem = ({ item }) => {
         <img
         className="mb-3"
           src={item.image}
-          alt=""
+          alt={item.name}
         />
       </div>
       <div>
         <div className="mb-3">
-        ${item.price}
+        ${item.price.toString().includes('.') ? item.price : item.price + '.00'}
         </div>
         <div>
-          <span>Qty:</span>
+          <span>Qty: &nbsp;</span>
           <input
+            className='cartInput'
             type="number"
             placeholder="1"
             value={item.purchaseQuantity}

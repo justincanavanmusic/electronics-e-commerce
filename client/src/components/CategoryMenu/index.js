@@ -11,12 +11,14 @@ import './categoryMenu.css'
 
 function CategoryMenu() {
   const [state, dispatch] = useStoreContext();
+  console.log(state)
 
   const { categories } = state;
+ 
 
   const { loading, data: categoryData } = useQuery(QUERY_CATEGORIES);
 
-  console.log(categories);
+  console.log(categoryData);
 
   useEffect(() => {
     if (categoryData) {
@@ -45,25 +47,22 @@ function CategoryMenu() {
   };
 
   return (
-    <div className='container'>
+    <div className='cat-container'>
       <div className='row'>
-      <h2 className="mt-3" id='c-cat'>Choose a Category:</h2>
-      {/* <div className='category-container'> */}
-      {categories.map((oneCategory) => (
-        <div className='col-6 col-sm-4 col-md-4 col-lg-2'>
-      <button id="add-btn" type="button" className="cat-btn btn mt-2" 
-          key={oneCategory._id}
-          onClick={() => {
-            handleClick(oneCategory._id);
-          }}
-        >
-          {oneCategory.name}
-          </button>
+        <h2 className="mt-3" id='c-cat'>Categories</h2>
+        {categories.map((oneCategory) => (
+          <div className='col-6 col-sm-4 col-md-4 col-lg-2'>
+            <button id="add-btn" type="button" className="cat-btn btn mt-2"
+              key={oneCategory._id}
+              onClick={() => {
+                handleClick(oneCategory._id);
+              }}
+            >
+              {oneCategory.name}
+            </button>
           </div>
-        
-      ))}
+        ))}
       </div>
-      {/* </div> */}
     </div>
   );
 }
