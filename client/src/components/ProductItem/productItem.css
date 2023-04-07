@@ -18,8 +18,6 @@ a {
     font-style: none !important;
 }
 
-
-
 #product-cards {
     /* max-width: 38vw;
     min-width: 38vw; */
@@ -30,7 +28,8 @@ a {
     margin-bottom: 2vh; 
     margin-top: 2vh;
     border: 1px solid transparent;
-    background-color: rgb(238, 229, 229) !important;
+    background-color: rgb(238, 229, 229, 0.6) !important;
+    color: white;
 }
 
 #add-btn {

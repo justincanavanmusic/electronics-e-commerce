@@ -1,11 +1,12 @@
-
-
-/* .cat-btn {
+.cat-btn {
     margin-right: 2rem;
-} */
+}
 
 .category-container {
     display: flex;
     justify-content: center;
-    /* flex: flex-wrap; */
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    max-width: 100%;
 }
