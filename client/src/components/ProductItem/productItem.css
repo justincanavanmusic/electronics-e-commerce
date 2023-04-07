@@ -35,6 +35,11 @@ a {
     border: 1px solid transparent;
 }
 
+
+img:hover {
+  transform: scale(1.05);
+}
+
 #add-btn-2 {
     background-color: var(--color2);
     border: 1px solid transparent;

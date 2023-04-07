@@ -25,7 +25,7 @@ function OrderHistory() {
               Order History for {user.firstName} {user.lastName}
             </h2>
 
-            <hr class="line-sep"></hr>
+            <hr className="line-sep"></hr>
 
             {user.orders.map((order) => (
               <div key={order._id} className="my-2">
@@ -33,7 +33,7 @@ function OrderHistory() {
                   {new Date(parseInt(order.purchaseDate)).toLocaleDateString()}
                 </h3> */}
                 <div className="flex-row">
-                  <div class="col-12">
+                  <div className="col-12">
                   
                     {order.products.map(({ _id, image, name, price }, index) => (
                       
@@ -41,15 +41,15 @@ function OrderHistory() {
                         <div className='row'>
                         <div className="col-md-8">
                         <h2 id="name-tag">{name}</h2>
-                        <Link class="oh-container" to={`/products/${_id}`}>
+                        <Link className="oh-container" to={`/products/${_id}`}>
                           <img alt={name} src={image} className='order-history' />
 
                         </Link>
                         </div>
                         
                       <div className='order-info col-md-4'>
-                      <p id='o-id'>Order ID: {order._id}</p>
-                        <p id='o-date'>Ordered: {new Date(parseInt(order.purchaseDate)).toLocaleDateString()}</p>
+                      <p id='o-id'>Order ID: <br></br> {order._id}</p>
+                        <p id='o-date'>Ordered: <br></br> {new Date(parseInt(order.purchaseDate)).toLocaleDateString()}</p>
                         </div>
                         
                         </div>
@@ -59,7 +59,7 @@ function OrderHistory() {
 
                         </Link> */}
                         <div>
-                          <span id="price-span">${price}</span>
+                          <span id="price-span">${price.toString().includes('.') ? price : price + '.00'}</span>
                         </div>
                         <hr class="line-sep"></hr>
                       </div>

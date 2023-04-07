@@ -11,12 +11,14 @@ import './categoryMenu.css'
 
 function CategoryMenu() {
   const [state, dispatch] = useStoreContext();
+  console.log(state)
 
   const { categories } = state;
+ 
 
   const { loading, data: categoryData } = useQuery(QUERY_CATEGORIES);
 
-  console.log(categories);
+  console.log(categoryData);
 
   useEffect(() => {
     if (categoryData) {
