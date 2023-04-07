@@ -94,7 +94,9 @@ const Cart = () => {
               >Checkout</button>
               </div>
             ) : (
-              <span>(log in to check out)</span>
+              <div className="mt-2 mb-2">
+              <span>You must be logged in to check out!</span>
+              </div>
             )}
           </div>
         </div>

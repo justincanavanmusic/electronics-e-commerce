@@ -21,9 +21,9 @@ a {
 
 
 #product-cards {
-    max-width: 30vw;
-    min-width: 30vw;
-    height: auto;
+    /* max-width: 38vw;
+    min-width: 38vw; */
+    /* height: auto; */
     text-align: center;
     border-radius: 25px;
     margin-bottom: 2vh; 
