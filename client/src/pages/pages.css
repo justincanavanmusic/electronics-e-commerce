@@ -53,4 +53,6 @@ color: #eb2a10 !important
 .order-info {
     text-align: right;
     
+#whiteText {
+    color: white;
 }

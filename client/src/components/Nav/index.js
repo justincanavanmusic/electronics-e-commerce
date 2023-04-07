@@ -18,7 +18,6 @@ function Nav() {
           </button>
           <div className='collapse navbar-collapse'
           id="navbarNavAltMarkup">
-            <a className="nav-link active" aria-current="page" href="/">Home</a>
             <a className="nav-link" href="/OrderHistory">Order History</a>
             <a className="nav-link" href="/" onClick={() => Auth.logout()}>Logout</a>
            
