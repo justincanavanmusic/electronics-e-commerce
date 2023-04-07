@@ -50,7 +50,7 @@ function ProductList() {
     <div className="container text-center my-2">
       
       <h2 className="text-center"
-      id='r-product'>Our Products:</h2>
+      id='r-product'>Products</h2>
    
       {state.products.length ? (
         <div className="row">
@@ -68,33 +68,6 @@ function ProductList() {
            </div>
           ))}
            </div>
-      
- 
-    // <div className="container my-2">
-       
-    //  <h2 className="text-center"
-    //   id='r-product'>Our Products:</h2>
-      
-   
-    //   {state.products.length ? (
-       
-    //     <div className="d-flex justify-content-evenly flex-wrap">
-    //       <div className="col-12 col-sm-6 col-lg-4">
-    //       {filterProducts().map((product) => (
-    //         <ProductItem
-    //           key={product._id}
-    //           _id={product._id}
-    //           image={product.image}
-    //           name={product.name}
-    //           price={product.price}
-    //           quantity={product.quantity}
-    //         />
-            
-    //       ))}
-          
-    //       </div>
-    //       </div>
-    
 
       ) : (
         
