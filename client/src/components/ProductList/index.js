@@ -49,7 +49,7 @@ function ProductList() {
   return (
     <div className="container text-center my-2">
       
-      <h2 className="text-center"
+      <h2 className="text-center gamer-font"
       id='r-product'>Products</h2>
    
       {state.products.length ? (

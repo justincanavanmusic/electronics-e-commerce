@@ -8,6 +8,7 @@ import {
 import { QUERY_CATEGORIES } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
 import './categoryMenu.css'
+import '../../index.css'
 
 function CategoryMenu() {
   const [state, dispatch] = useStoreContext();
@@ -47,11 +48,11 @@ function CategoryMenu() {
   };
 
   return (
-    <div className='cat-container'>
+    <div className='container'>
       <div className='row'>
-        <h2 className="mt-3" id='c-cat'>Categories</h2>
+        <h2 className="mt-3 gamer-font" id='c-cat'>Categories</h2>
         {categories.map((oneCategory) => (
-          <div className='col-6 col-sm-4 col-md-4 col-lg-2'>
+          <div className='d-flex justify-content-evenly col-6 col-sm-4 col-md-4 col-lg-2'>
             <button id="add-btn" type="button" className="cat-btn btn mt-2"
               key={oneCategory._id}
               onClick={() => {

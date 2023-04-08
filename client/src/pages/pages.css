@@ -60,3 +60,20 @@ color: #eb2a10 !important
 #whiteText {
     color: white;
 }
+
+.cart-btns {
+    text-align: center;
+}
+
+.price {
+    font-size: 2.5rem;
+}
+
+.product-img {
+    border-radius: 10% !important;
+   
+}
+/* .card-margin {
+    margin-right: 2vw;
+} */
+

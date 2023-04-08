@@ -18,17 +18,19 @@ function Detail() {
   const { id } = useParams();
 
   const [currentProduct, setCurrentProduct] = useState({});
+  // console.log(currentProduct.price.toString().includes('.'))
+  // console.log(typeof currentProduct.price.toString())
 
   const { loading, data } = useQuery(QUERY_PRODUCTS);
 
   const { products, cart } = state;
+  console.log(cart);
 
   useEffect(() => {
-    // already in global store
     if (products.length) {
       setCurrentProduct(products.find((product) => product._id === id));
     }
-    // retrieved from server
+  
     else if (data) {
       dispatch({
         type: UPDATE_PRODUCTS,
@@ -39,7 +41,6 @@ function Detail() {
         idbPromise('products', 'put', product);
       });
     }
-    // get cache from idb
     else if (!loading) {
       idbPromise('products', 'get').then((indexedProducts) => {
         dispatch({
@@ -85,29 +86,70 @@ function Detail() {
       {currentProduct && cart ? (
         <div className="container my-1" id='whiteText'>
           <Link to="/">← Back to Products</Link>
+          <div className="flex-row">
+                  <div className="col-12">
+        <div className='row'>
+        <div className='col-md-6 card-margin'>
+          <h2 className='mt-3 mb-3'>{currentProduct.name}</h2>
+          <hr className="line-sep"></hr>
 
-          <h2>{currentProduct.name}</h2>
+          <p className='mt-4 mb-4'>{currentProduct.description}
+          </p>
 
-          <p>{currentProduct.description}</p>
-
-          <p>
-            <strong>Price:</strong>${currentProduct.price}{' '}
-            <button onClick={addToCart}>Add to Cart</button>
+          <hr className="line-sep"></hr>
+      
+       
+           <p>
+            {/* <strong>Price: </strong>${currentProduct.price.toString().includes(".") ? currentProduct.price : currentProduct.price + ".00"} */}
+          <div className='mb-3 cart-btns'>
+            <div className='price'>
+            <p className=''>${currentProduct.price}</p> 
+            </div>
+            
+            <button className="btn" onClick={addToCart}>Add to Cart</button>
+            <br></br><br></br>
             <button
+            className="btn" 
               disabled={!cart.find((p) => p._id === currentProduct._id)}
               onClick={removeFromCart}
             >
               Remove from Cart
             </button>
+            <br></br><br></br>
+            </div>
+          
           </p>
-
+          <hr className="line-sep"></hr>
+          </div>
+         
+          <div className='card col-md-6 col-lg-4 product-img justify-content-center align-items-center'>
+           
           <img
             src={currentProduct.image}
             alt={currentProduct.name}
-            height={400}
-            width={400}
+            // height={300}
+            // width={300}
+            width='95%'
+            height='95%'
+            // img-fluid = 'maxWidth: 30%'
+            
           />
+    
+        
+          </div>
+
+    
+          </div>
+          </div>
+          
+    
+       
+          </div>
+
+      
+          
         </div>
+        
       ) : null}
       {loading ? <p>Loading</p> : null}
     </>
