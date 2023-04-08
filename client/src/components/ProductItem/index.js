@@ -37,7 +37,8 @@ function ProductItem(item) {
 
   return (
     <div className="product-card h-100 px-3 py-3">
-      <div className='d-flex flex-column justify-content-between flex-grow-1'>
+      {/* <div className='d-flex flex-column justify-content-between flex-grow-1'> */}
+     
         <p>{name}</p>
 
         <Link to={`/products/${_id}`}>
@@ -53,8 +54,8 @@ function ProductItem(item) {
         <span className="mt-2">
           ${price.toString().includes(".") ? price : price + ".00"}
         </span>
-      </div>
-      <div class="btn-box">
+      {/* </div> */}
+      <div className="btn-box align-self-center">
         <button
           id="add-btn-2"
           onClick={addToCart}

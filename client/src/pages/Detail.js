@@ -85,7 +85,9 @@ function Detail() {
     <>
       {currentProduct && cart ? (
         <div className="container my-1" id='whiteText'>
-          <Link to="/">← Back to Products</Link>
+          <div className='mt-3'>
+          <Link className='product-link' to="/">← Back to Products</Link>
+          </div>
           <div className="flex-row">
                   <div className="col-12">
         <div className='row'>
@@ -122,7 +124,10 @@ function Detail() {
           <hr className="line-sep"></hr>
           </div>
          
-          <div className='card col-md-6 col-lg-4 product-img justify-content-center align-items-center'>
+          {/* <div className='card col-md-6 col-lg-4 product-img justify-content-center align-items-center'> */}
+
+
+          <div className='card mb-5 col-md-6 col-lg-4 product-img justify-content-center align-items-center'>
            
           <img
             src={currentProduct.image}

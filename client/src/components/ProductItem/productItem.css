@@ -22,6 +22,10 @@ a {
 border: 1px solid transparent;
 background-color: rgb(238, 229, 229, 0.6) !important;
 color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .cardImage {

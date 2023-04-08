@@ -74,6 +74,9 @@ color: #eb2a10 !important
    
 }
 /* .card-margin {
-    margin-right: 2vw;
+    margin-right: 5vw;
 } */
 
+.product-link {
+    margin-top: 5vh !important;
+}
