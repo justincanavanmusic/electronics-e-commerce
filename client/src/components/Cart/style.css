@@ -27,6 +27,7 @@
   z-index: 1;
 }
 
+
 .cart h2 {
   font-size: 1.5rem;
   border-bottom: 1px solid var(--dark);
@@ -69,7 +70,7 @@
 
 .cart img {
   width: 70px;
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
 }
 
 .cart input {

@@ -17,13 +17,27 @@ img {
 
 .cart-item-display {
     text-align: center;
-    width: 22vw;
+    /* width: */
+    
+}
+
+.img-card {
+    width: 35% !important;
+    margin: 0 auto ;
+    border-radius: 15%;
+  }
+
+.img-card {
+    align-items: center;
+ 
+
+    /* justify-content: center; */
 }
 
 .cartInput {
     border-radius: 5px;
 }
 
-.cart-item-img {
-    mix-blend-mode: darken;   
-}
+/* .cart-item-img {
+    mix-blend-mode: lighten;   
+} */

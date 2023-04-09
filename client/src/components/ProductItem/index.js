@@ -4,6 +4,7 @@ import { pluralize } from "../../utils/helpers";
 import { useStoreContext } from "../../utils/GlobalState";
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import "./productItem.css";
+import "../../utils/showPrice"
 
 import { idbPromise } from "../../utils/helpers";
 
@@ -53,6 +54,8 @@ function ProductItem(item) {
         </Link>
         <span className="mt-2">
           ${price.toString().includes(".") ? price : price + ".00"}
+          
+         
         </span>
       {/* </div> */}
       <div className="btn-box align-self-center">

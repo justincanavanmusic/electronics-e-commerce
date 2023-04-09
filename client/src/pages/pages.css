@@ -71,11 +71,14 @@ color: #eb2a10 !important
 
 .product-img {
     border-radius: 10% !important;
+    
+    /* background-color: rgb(255, 248, 248) !important; */
    
 }
 /* .card-margin {
     margin-right: 5vw;
 } */
+
 
 .product-link {
     margin-top: 5vh !important;

@@ -11,6 +11,7 @@ import './style.css';
 import {AiOutlineShoppingCart, AiFillCloseCircle} from 'react-icons/ai'
 
 
+
 const stripePromise = loadStripe('pk_test_51MtYp9Ez0mh6YSVXTKg8oYT8P8KB2aoOiktzz41yMRgMW7GS7zsipzLFNrbQbPSOEzpnH1Z3PoahcoFnOoLiFht000PIF5lKYj');
 
 const Cart = () => {
@@ -52,8 +53,7 @@ const Cart = () => {
     const productIds = [];
 
     state.cart.forEach((item) => {
-      // loops over each item in cart
-      // inner for loop executes while item is still in quantity
+   
       for (let i = 0; i < item.purchaseQuantity; i++) {
         productIds.push(item._id);
       }
@@ -90,7 +90,7 @@ const Cart = () => {
 
             {Auth.loggedIn() ? (
               <div>
-              <button onClick={submitCheckout} id="add-btn" type="button" className="btn btn-primary mt-2" 
+              <button onClick={submitCheckout} id="add-btn" type="button" className="btn mt-2" 
               >Checkout</button>
               </div>
             ) : (
