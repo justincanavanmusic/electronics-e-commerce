@@ -28,3 +28,7 @@
     align-items: center;
 }
 
+.btm-footer {
+   min-height: 100px;
+   margin-bottom: auto !important;  
+}
