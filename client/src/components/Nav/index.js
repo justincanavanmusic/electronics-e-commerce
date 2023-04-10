@@ -36,7 +36,7 @@ function Nav() {
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="collapse navbar-collapse gamer-font" id="navbarNavAltMarkup">
             <a className="nav-link" href="/OrderHistory">Order History</a>
             <a className="nav-link" href="/Login">Login</a>
             <a className="nav-link" href="/Signup">Signup</a>

@@ -51,7 +51,7 @@ function CategoryMenu() {
     <div className='container'>
       <div className='row'>
       <h2 className="mt-3 gamer-font" id='c-cat'>Categories</h2>
-      <button id="add-btn" type="button" className="view-all-button cat-btn btn mt-2"
+      <button id="add-btn" type="button" className="product-font view-all-button cat-btn btn mt-2"
           onClick={() => {
             handleClick(window.location.reload());
           }}
@@ -68,7 +68,7 @@ function CategoryMenu() {
           <div className='d-flex justify-content-evenly col-6 col-sm-4 col-md-4 col-lg-2'>
 
 
-            <button id="add-btn" type="button" className="cat-btn btn mt-2"
+            <button id="add-btn" type="button" className="cat-btn product-font btn mt-2"
               key={oneCategory._id}
               onClick={() => {
                 handleClick(oneCategory._id);

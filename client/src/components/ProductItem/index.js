@@ -5,6 +5,7 @@ import { useStoreContext } from "../../utils/GlobalState";
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import "./productItem.css";
 import "../../utils/showPrice"
+import '../../index.css'
 
 import { idbPromise } from "../../utils/helpers";
 
@@ -37,7 +38,7 @@ function ProductItem(item) {
   };
 
   return (
-    <div className="product-card h-100 px-3 py-3">
+    <div className="product-font product-card h-100 px-3 py-3">
       {/* <div className='d-flex flex-column justify-content-between flex-grow-1'> */}
      
         <p>{name}</p>
@@ -60,6 +61,7 @@ function ProductItem(item) {
       {/* </div> */}
       <div className="btn-box align-self-center">
         <button
+      
           id="add-btn-2"
           onClick={addToCart}
           type="button"

@@ -1,12 +1,13 @@
 import React from "react";
 import "./footer.css"
 import { FcElectronics } from 'react-icons/fc'
+import '../../index.css'
 
 
 function Footer() {
     return (
         
-     <div className="btm-footer">
+     <div className="btm-footer product-font">
 
 <div className="d-flex fixed-bottom align-items-center footer-color justify-content-between footerDiv">
 <p className="pt-3 created-by">Site created by Dom, Matt, Ricardo, Justin</p>

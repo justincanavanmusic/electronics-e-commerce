@@ -12,6 +12,10 @@
     color: var(--color4);
 }
 
+.product-font {
+    font-family: 'Roboto Slab', serif;
+}
+
 
 a {
     color: var(--color3) !important;
