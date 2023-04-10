@@ -40,12 +40,18 @@ a {
     
 }
 
+.navbar-toggler {
+    background-color: green !important;
+}
+
 @media (max-width: 990px) {
     .nav-link {
         width: 150px;
     }
 }
 
-.navbar-toggler {
-    background-color: green !important;
+@media (max-width: 475px) {
+    .navbar-brand {
+        font-size: small !important;
+    }
 }
