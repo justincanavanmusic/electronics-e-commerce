@@ -52,11 +52,11 @@ function ProductItem(item) {
             className="cardImage"
           />
         </Link>
-        <span className="mt-2">
+        <h2 className="mt-2 ">
           ${price.toString().includes(".") ? price : price + ".00"}
           
          
-        </span>
+        </h2>
       {/* </div> */}
       <div className="btn-box align-self-center">
         <button
