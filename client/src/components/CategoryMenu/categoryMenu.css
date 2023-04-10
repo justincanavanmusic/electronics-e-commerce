@@ -2,14 +2,18 @@
     width: 100px;
 }
 
-.cat-container {
+/* .cat-container {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-    max-width: 100%;
-    position: relative;
+    justify-content: center; */ 
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+    /* gap: 10px; */
+    /* max-width: 100%; */
+    /* position: relative; 
+} */
+
+.gamer-font {
+    font-family: 'Russo One', sans-serif;
 }
 
 #c-cat {

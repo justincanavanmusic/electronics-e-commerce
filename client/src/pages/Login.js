@@ -88,7 +88,7 @@ function Login(props) {
           </div>
         ) : null}
         <div className="flex-row flex-end">
-        <button id="add-btn"type="submit" className="btn btn-primary mt-2">Submit</button>
+        <button id="add-btn"type="submit" className="btn mt-2">Submit</button>
          
           {/* <button type="submit">Submit</button> */}
         </div>

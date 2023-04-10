@@ -20,6 +20,7 @@ import Signup from "./pages/Signup";
 import Success from './pages/Success';
 import Nav from "./components/Nav/index";
 import OrderHistory from "./pages/OrderHistory";
+import Footer from './components/Footer/Footer'
 
 
 const httpLink = createHttpLink({
@@ -69,6 +70,7 @@ function App() {
                 element={<Success />} 
               />
             </Routes>
+            <Footer />
           </StoreProvider>
         </div>
         </body>

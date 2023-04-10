@@ -4,6 +4,7 @@ import { REMOVE_FROM_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
 import './cartItem.css'
 import {AiFillCloseCircle} from 'react-icons/ai'
+import showPrice from '../../utils/showPrice';
 
 const CartItem = ({ item }) => {
   console.log(item);
@@ -40,19 +41,24 @@ const CartItem = ({ item }) => {
   }
 
   return (
-    <div className="flex-row">
-      <div className='cart-item-display'>
-      <div className="mb-3">{item.name}</div>
-      <div>
+    <div className="flex-row cart-item-display">
+      <div className=''>
+      <p className="mb-3">{item.name}</p>
+      {/* <div className=''> */}
+      <div className='card img-card col-12'>
+    
         <img
-        className="mb-3 cart-item-img"
+        className="mb-2 mt-2 cart-item-img"
           src={item.image}
           alt={item.name}
         />
-      </div>
+       
+        </div>
+      {/* </div> */}
       <div>
-        <div className="mb-3">
-        ${item.price.toString().includes('.') ? item.price : item.price + '.00'}
+        <div className="mt-3 mb-3">
+        {/* ${item.price.toString().includes('.') ? item.price : item.price + '.00'} */}
+        {showPrice(item)}
         </div>
         <div>
           <span>Qty: &nbsp;</span>

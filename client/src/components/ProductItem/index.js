@@ -4,17 +4,14 @@ import { pluralize } from "../../utils/helpers";
 import { useStoreContext } from "../../utils/GlobalState";
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import "./productItem.css";
+import "../../utils/showPrice"
 
 import { idbPromise } from "../../utils/helpers";
 
 function ProductItem(item) {
   const [state, dispatch] = useStoreContext();
 
-  console.log(item);
-
   const { image, name, _id, price, quantity } = item;
-
-  console.log(typeof price);
 
   const { cart } = state;
 
@@ -40,8 +37,9 @@ function ProductItem(item) {
   };
 
   return (
-    <div className="product-card  h-100 px-3 py-3">
-      <div className='d-flex flex-column justify-content-between flex-grow-1'>
+    <div className="product-card h-100 px-3 py-3">
+      {/* <div className='d-flex flex-column justify-content-between flex-grow-1'> */}
+     
         <p>{name}</p>
 
         <Link to={`/products/${_id}`}>
@@ -56,14 +54,16 @@ function ProductItem(item) {
         </Link>
         <span className="mt-2">
           ${price.toString().includes(".") ? price : price + ".00"}
+          
+         
         </span>
-      </div>
-      <div class="btn-box">
+      {/* </div> */}
+      <div className="btn-box align-self-center">
         <button
           id="add-btn-2"
           onClick={addToCart}
           type="button"
-          className="btn btn-primary mt-2"
+          className="btn mt-2"
         >
           Add to cart
         </button>
