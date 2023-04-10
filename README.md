@@ -1,5 +1,5 @@
 # Gamer's-Circuit
-https://github.com//Gamer's-Circuit
+https://github.com/Gamer's-Circuit
 
 [Heroku Live Link](https://shielded-basin-55972.herokuapp.com/)
 
