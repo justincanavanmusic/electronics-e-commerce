@@ -134,7 +134,7 @@ function Detail() {
 
                 {/* <div className='card col-md-6 col-lg-4 product-img justify-content-center align-items-center'> */}
 
-                <div className="card mb-5 mt-5 col-md-5 col-lg-4 product-img justify-content-center align-items-center">
+                <div className="card mb-5 col-md-5 col-lg-4 product-img justify-content-center align-items-center imgDiv">
                   <img
                     src={currentProduct.image}
                     alt={currentProduct.name}
@@ -142,6 +142,7 @@ function Detail() {
                     // width={300}
                     width="95%"
                     height="95%"
+                    className="testImg"
                     // img-fluid = 'maxWidth: 30%'
                   />
                 </div>

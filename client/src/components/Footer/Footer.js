@@ -8,7 +8,7 @@ function Footer() {
         
      <div className="btm-footer">
 
-<div className="d-flex fixed-bottom align-items-center footer-color justify-content-between sticky-bottom">
+<div className="d-flex fixed-bottom align-items-center footer-color justify-content-between footerDiv">
 <p className="pt-3 created-by">Site created by Dom, Matt, Ricardo, Justin</p>
 
 <FcElectronics className="icon"/>
