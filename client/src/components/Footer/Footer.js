@@ -1,0 +1,20 @@
+import React from "react";
+import "./footer.css"
+import { FcElectronics } from 'react-icons/fc'
+
+
+function Footer() {
+    return (
+     
+<div className="d-flex align-items-center footer-color justify-content-between sticky-bottom">
+<p className="created-by">Site created by Dom, Matt, Ricardo, Justin</p>
+
+<FcElectronics className="icon"/>
+
+<p className='contact'>Contact us for inquiries at gamercircuit@gmail.com!</p>
+</div>
+
+    )
+}
+
+export default Footer;

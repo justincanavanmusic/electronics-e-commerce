@@ -77,7 +77,9 @@ const Cart = () => {
       <div className="close" onClick={toggleCart}>
         <AiFillCloseCircle className="x-icon" />
       </div>
+     
       <h2 className="mx-3">Your Cart</h2>
+      
       <hr></hr>
       {state.cart.length ? (
         <div>

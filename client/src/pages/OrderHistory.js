@@ -37,7 +37,7 @@ function OrderHistory() {
                       
                       <div key={index} className="card px-1 py-1 item-card">
                         <div className='row'>
-                        <div className="col-md-8">
+                        <div className="col sm-6 col-md-7">
                         <h2 id="name-tag">{name}</h2>
                         <Link className="oh-container" to={`/products/${_id}`}>
                           <img alt={name} src={image} className='order-history' />
@@ -45,7 +45,7 @@ function OrderHistory() {
                         </Link>
                         </div>
                         
-                      <div className='order-info col-md-4'>
+                      <div className='order-info col-sm-4 col-md-5'>
                       <p id='o-id'>Order ID: <br></br> {order._id}</p>
                         <p id='o-date'>Ordered: <br></br> {new Date(parseInt(order.purchaseDate)).toLocaleDateString()}</p>
                         </div>
@@ -56,7 +56,7 @@ function OrderHistory() {
                           <img alt={name} src={image} className='order-history' />
 
                         </Link> */}
-                        <div>
+                        <div className='col-md-4'>
                           <span id="price-span">${price.toString().includes('.') ? price : price + '.00'}</span>
                         </div>
                         <hr class="line-sep"></hr>

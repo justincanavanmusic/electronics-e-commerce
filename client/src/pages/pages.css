@@ -35,14 +35,15 @@ color: #eb2a10 !important
 }
 
 #price-span{
-    font-size: 50px !important;
+    font-size: 42px !important;
 
 }
 
 #name-tag{
     font-style: none !important;
     margin-bottom: 3vh;
-    max-width: 80%;
+    /* max-width: 80%; */
+    margin-right: 1px !important;
 
 }
 #o-name,#o-date,#o-id,#price-span,#name-tag,.line-sep,#link-color{

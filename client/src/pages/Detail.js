@@ -102,9 +102,12 @@ function Detail() {
 
                   <hr className="line-sep"></hr>
 
+                  {/* <p>
+                    <strong>Price: </strong>${currentProduct.price.toString().includes(".") ? currentProduct.price : currentProduct.price + ".00"}
+                    </p> */}
                     <div className="mb-3 cart-btns">
                       <div className="price">
-                     
+                        {/* <p>${currentProduct?.price?.toString().includes('.') ? currentProduct.price : currentProduct.price + ".00"}</p> */}
                         <p>{showPrice(currentProduct)}</p>
                       </div>
 
