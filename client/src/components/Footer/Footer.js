@@ -16,7 +16,7 @@ function Footer() {
 <FcElectronics className="icon"/>
 
 <p className='contact pt-3'>Contact us for inquiries on
-<a className="github-icon" href="https://github.com/justincanavanmusic/electronics-e-commerce" > <GoLogoGithub className='icon'/></a>
+<a className="github-icon" href="https://github.com/justincanavanmusic/electronics-e-commerce" target='blank' alt="Github Icon" > <GoLogoGithub className='icon'/></a>
 </p>
 
 </div>
