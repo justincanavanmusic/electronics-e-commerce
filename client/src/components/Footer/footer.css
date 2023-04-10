@@ -23,10 +23,14 @@
     text-align: left;
     margin-left: 1.5vw;
 }
+
 .github-icon {
     text-decoration: none;
 }
 
+.icon:hover {
+    transform: scale(1.1) !important;
+}
 
 .icon {
     height: 5vh;
