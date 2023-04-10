@@ -103,8 +103,8 @@
 }
 
 .imgDiv {
-    max-width: 25vw;
-    max-height: 25vh;
+    max-width: 40vw;
+    max-height: 40vh;
     margin-top: 150px !important;
 }
 
@@ -117,5 +117,6 @@
     }
 
     .testImg {
+        height: 20vh;
     }
 }
