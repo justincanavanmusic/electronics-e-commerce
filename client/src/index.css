@@ -10,6 +10,7 @@
 
 html {
   scroll-behavior: smooth;
+
 }
 
 .btn:hover {
@@ -21,6 +22,7 @@ body {
 	background-size: 400% 400%;
 	animation: gradient 5s ease infinite;
 	height: 100vh;
+	
 }
 
 @keyframes gradient {
@@ -34,5 +36,4 @@ body {
 		background-position: 0% 50%;
 	}
 }
-
 
