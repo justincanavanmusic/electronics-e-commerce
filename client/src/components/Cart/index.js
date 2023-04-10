@@ -9,6 +9,7 @@ import { useStoreContext } from '../../utils/GlobalState';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
 import './style.css';
 import {AiOutlineShoppingCart, AiFillCloseCircle} from 'react-icons/ai'
+import '../../index.css'
 
 
 
@@ -73,7 +74,7 @@ const Cart = () => {
   }
 
   return (
-    <div className="cart">
+    <div className="cart product-font">
       <div className="close" onClick={toggleCart}>
         <AiFillCloseCircle className="x-icon" />
       </div>
@@ -92,7 +93,7 @@ const Cart = () => {
 
             {Auth.loggedIn() ? (
               <div>
-              <button onClick={submitCheckout} id="add-btn" type="button" className="btn mt-2" 
+              <button onClick={submitCheckout} id="add-btn" type="button" className="btn mt-2 submit-btn" 
               >Checkout</button>
               </div>
             ) : (

@@ -13,6 +13,7 @@ import { QUERY_PRODUCTS } from "../utils/queries";
 import { idbPromise } from "../utils/helpers";
 import "./pages.css";
 import showPrice from '../utils/showPrice'
+import "../index.css"
 
 function Detail() {
   const [state, dispatch] = useStoreContext();
@@ -85,7 +86,7 @@ function Detail() {
   return (
     <>
       {currentProduct && cart ? (
-        <div className="container my-1" id="whiteText">
+        <div className="product-font container my-1" id="whiteText">
           <div className="mt-3">
             <Link className="product-link" to="/">
               ← Back to Products

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { LOGIN } from "../utils/mutations";
 import Auth from "../utils/auth";
 import './pages.css'
+import '../index.css'
 
 function Login(props) {
   const [formState, setFormState] = useState({ email: "", password: "" });
@@ -31,7 +32,7 @@ function Login(props) {
   };
 
   return (
-    <div id="login-text" className="container my-1">
+    <div id="login-text" className="container my-1 product-font">
       <Link id="link-color" to="/signup">← Go to Signup</Link>
 
       <h2 className="mt-3 mb-3">Login</h2>

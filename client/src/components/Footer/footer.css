@@ -15,17 +15,23 @@
 .contact {
     text-align: right !important;
     margin-right: 1.5vw;
+    text-decoration: none !important;
+ 
 }
 
 .created-by {
     text-align: left;
     margin-left: 1.5vw;
 }
+.github-icon {
+    text-decoration: none;
+}
+
 
 .icon {
     height: 5vh;
-    width: 5vw;
-    align-items: center;
+    width: 5vw;   
+    /* align-items: center; */
 }
 
 .btm-footer {

@@ -95,6 +95,9 @@
   transform: scale(1.1);
 }
 
+.submit-btn {
+  margin-bottom: 9vh;
+}
 
 
 @media screen and (max-width: 990px) {
