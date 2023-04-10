@@ -1,6 +1,7 @@
 import React from "react";
 import "./footer.css"
 import { FcElectronics } from 'react-icons/fc'
+import { GoLogoGithub} from 'react-icons/go'
 import '../../index.css'
 
 
@@ -14,7 +15,10 @@ function Footer() {
 
 <FcElectronics className="icon"/>
 
-<p className='contact pt-3'>Contact us for inquiries at gamercircuit@gmail.com!</p>
+<p className='contact pt-3'>Contact us for inquiries on
+<a className="github-icon" href="https://github.com/justincanavanmusic/electronics-e-commerce" > <GoLogoGithub className='icon'/></a>
+</p>
+
 </div>
 
 
