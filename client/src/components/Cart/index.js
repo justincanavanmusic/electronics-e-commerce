@@ -92,7 +92,7 @@ const Cart = () => {
 
             {Auth.loggedIn() ? (
               <div>
-              <button onClick={submitCheckout} id="add-btn" type="button" className="btn mt-2" 
+              <button onClick={submitCheckout} id="add-btn" type="button" className="btn mt-2 submit-btn" 
               >Checkout</button>
               </div>
             ) : (
