@@ -4,6 +4,7 @@ import { useMutation } from '@apollo/client';
 import Auth from '../utils/auth';
 import { ADD_USER } from '../utils/mutations';
 import './pages.css'
+import '../index.css'
 
 function Signup(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });
@@ -32,7 +33,7 @@ function Signup(props) {
   };
 
   return (
-    <div id="login-text" className="container my-1">
+    <div id="login-text" className="product-font container my-1">
       <Link id="link-color" to="/login">← Go to Login</Link>
 
       <h2 className="mt-3 mb-3">Sign Up</h2>
@@ -82,7 +83,7 @@ function Signup(props) {
           />
         </div>
         <div className="flex-row flex-end">
-        <button id="add-btn"type="submit" className="btn mt-2">Submit</button>
+        <button id="add-btn"type="submit" className="btn btn-primary mt-2">Submit</button>
           {/* <button type="submit">Submit</button> */}
         </div>
       </form>
