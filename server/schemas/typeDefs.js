@@ -16,6 +16,15 @@ type Category {
     category: Category
   }
 
+  type Review {
+    _id: ID
+    product: Product
+    user: User
+    rating: Int
+    text: String
+    createdAt: String
+  }
+
   type Order {
     _id: ID
     purchaseDate: String
@@ -48,6 +57,7 @@ type Category {
     user: User
     order(_id: ID!): Order
     checkout(products: [ID]!): Checkout
+    reviews(product: ID): [Review]
   }
 
   type Mutation {
@@ -56,6 +66,7 @@ type Category {
     updateUser(firstName: String, lastName: String, email: String, password: String): User
     updateProduct(_id: ID!, quantity: Int!): Product
     login(email: String!, password: String!): Auth
+    addReview(product: ID, rating: Int, text: String): Review
   }
 `
 
