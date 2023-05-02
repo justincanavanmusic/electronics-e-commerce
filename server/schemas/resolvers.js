@@ -93,7 +93,7 @@ const resolvers = {
     },
 
     /// new
-    reviews: async (parent, { product }) => {
+    review: async (parent, { product }) => {
       const params = { product };
       return await Review.find(params);
     },
