@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Product, Category, Order } = require('../models');
+const { User, Product, Category, Order, Review } = require('../models');
 const { signToken } = require('../utils/auth');
 const stripe = require('stripe')('sk_test_51MtYp9Ez0mh6YSVXM5W9eyOI6LHnOTlWyZcnOwJn4XPdZKFveSY4WnZEgIyOhazfWt1PoIXuRWLCCSUcV3opPsBC0061pASbnN');
 
@@ -8,7 +8,6 @@ const resolvers = {
     users: async () => {
       return User.find();
     },
-    
     categories: async () => {
       return await Category.find();
     },
@@ -91,7 +90,14 @@ const resolvers = {
       });
 
       return { session: session.id };
-    }
+    },
+
+    /// new
+    reviews: async (parent, { product }) => {
+      const params = { product };
+      return await Review.find(params);
+    },
+
   },
   Mutation: {
     addUser: async (parent, args) => {
@@ -100,7 +106,7 @@ const resolvers = {
       const token = signToken(user);
 
       return { token, user };
-   
+
     },
     addOrder: async (parent, { products }, context) => {
       console.log(context);
@@ -142,7 +148,19 @@ const resolvers = {
       const token = signToken(user);
 
       return { token, user };
+    },
+
+    // new
+    addReview: async (parent, { product, rating, text }, context) => {
+      if (context.user) {
+        const review = new Review({ product, rating, text, user: context.user._id });
+        await review.save();
+        return review;
+      }
+
+      throw new AuthenticationError('Not logged in');
     }
+
   }
 };
 
