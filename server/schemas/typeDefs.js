@@ -57,7 +57,7 @@ type Category {
     user: User
     order(_id: ID!): Order
     checkout(products: [ID]!): Checkout
-    reviews(product: ID): [Review]
+    review(product: ID): [Review]
   }
 
   type Mutation {

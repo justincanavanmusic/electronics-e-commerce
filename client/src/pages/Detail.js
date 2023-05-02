@@ -131,6 +131,9 @@ function Detail() {
                     </div>
                  
                   <hr className="line-sep"></hr>
+
+                  <div>{currentProduct.review}</div>
+
                 </div>
 
                 {/* <div className='card col-md-6 col-lg-4 product-img justify-content-center align-items-center'> */}

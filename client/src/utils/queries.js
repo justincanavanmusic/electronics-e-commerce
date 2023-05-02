@@ -12,6 +12,7 @@ export const QUERY_PRODUCTS = gql`
       category {
         _id
       }
+      review
     }
   }
 `;
@@ -36,6 +37,7 @@ export const QUERY_ALL_PRODUCTS = gql`
       category {
         name
       }
+      review
     }
   }
 `;
